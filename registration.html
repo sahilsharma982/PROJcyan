@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+        <div>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required minlength="5" maxlength="15" pattern="[a-zA-Z0-9]+" placeholder="Enter Username">
+            <div class="invalid-feedback">Please enter a valid username (5-15 characters, alphanumeric only).</div>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter Email">
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required minlength="8" placeholder="Enter Password">
+            <div class="invalid-feedback">Please enter a valid password (min. 8 characters).</div>
+        </div>
+        <div>
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required minlength="8" placeholder="Confirm Password">
+            <div class="invalid-feedback">Passwords do not match.</div>
+        </div>
+        <div>
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required max="2004-12-31">
+            <div class="invalid-feedback">Please enter a valid date of birth (must be before 2005).</div>
+        </div>
+
+        <div>
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+</html>
